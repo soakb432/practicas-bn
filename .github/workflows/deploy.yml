@@ -31,3 +31,13 @@ jobs:
       
       - name: Build page
         run: npm run build
+  
+  notification:
+    needs: build
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: hola
+        run: echo "Hola"
+  
