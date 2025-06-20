@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Set cache
+      - name: Set Cache
         uses: actions/cache@v4
         with:
           path: node_modules
